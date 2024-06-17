@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator anim;
 
-    public bool isWalking = true;
+    public bool isWalking;
 
 
     // Start is called before the first frame update
@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         yInput = Input.GetAxis("Vertical");
      
         HandleCollision();
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
         }
@@ -63,8 +63,8 @@ public class PlayerMovement : MonoBehaviour
     private void HandleAnimation()
     {
        
-        anim.SetBool("isWalking", isWalking);
-        //anim.SetFloat("xMove", rb.velocity.x);
+        //anim.SetBool("isWalking", isWalking);
+        anim.SetFloat("xMove", rb.velocity.x);
     }
     private void HandleCollision()
     {
