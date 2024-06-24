@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BattleEnemy
+  - Enemy
+  - BattlePlayer
+  - Hero
+  - Collectable
+  - NPCs
   layers:
   - Default
   - TransparentFX
@@ -15,7 +21,7 @@ TagManager:
   - Enemies
   - Items
   - Player
-  - 
+  - Projectile
   - 
   - 
   - 
@@ -40,4 +46,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3633912653
+    locked: 0
+  - name: Platform
+    uniqueID: 768436065
+    locked: 0
+  - name: Background
+    uniqueID: 2150063647
+    locked: 0
+  - name: Collectables
+    uniqueID: 1035240003
+    locked: 0
+  - name: Projectiles
+    uniqueID: 1176934215
+    locked: 0
+  - name: Player
+    uniqueID: 4033932811
+    locked: 0
+  - name: Enemies
+    uniqueID: 4263437885
     locked: 0
